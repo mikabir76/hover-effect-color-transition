@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 80%;
+    margin: 100px auto;
+}
+
+.row {
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    cursor: pointer;
+}
+
+.col {
+    /* flex-basis: 30%; */
+    position: relative;
+
+
+}
+
+.col img {
+    width: 100%;
+    display: block;
+}
+
+.info {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+    border-radius: 5px;
+
+}
+
+.info h2 {
+    font-weight: 800;
+}
+
+.info p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.social-links {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 2s ease-in;
+}
+
+.social-links .fa-brands {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.fa-facebook {
+    color: #1877F2;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-instagram {
+    color: #E1306C;
+}
+
+.col:hover .social-links {
+    max-height: 100%;
+}
+
+.pic {
+    filter: grayscale(100%)
+}
+
+.layer {
+    border-bottom: 3px solid red;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: all 2s ease-in;
+}
+
+.col:hover .layer {
+    max-height: 100%;
+}
