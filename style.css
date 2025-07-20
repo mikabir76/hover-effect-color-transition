@@ -100,3 +100,20 @@
 .col:hover .layer {
     max-height: 100%;
 }
+
+/* Responsive for small device */
+@media screen and (max-width: 576px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive design for teblet device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+
+
+}
